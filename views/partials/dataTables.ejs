@@ -1,0 +1,7 @@
+<% if(typeof dbData !== 'undefined') { %>
+  <% dbData.forEach( row => { %>
+    <% row.forEach( value => { %>    
+        <p><%= value; %></p>
+    <% }) %>
+  <% }) %> 
+<% } %>

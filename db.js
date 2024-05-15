@@ -6,12 +6,11 @@ const pool = mysql.createPool({
     port: '3306',
     user: 'root',
     password: '',
-    database: 'gritacademy',
+    database: 'skoldatabas',
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,
     rowsAsArray: true,
-
   });
   // Export a function to execute SQL queries
 module.exports = {

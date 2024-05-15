@@ -9,12 +9,12 @@ const bodyParser = require('body-parser');//must be installed with npm
 const app = express();
 
 //set public folder for static web pages
-app.use(express.static('../public/style/style.css'));
+app.use(express.static('public'));
 
 //set dynamic web pages, set views and engine
 app.set('view engine', 'ejs');
 
-// Set up body parser middleware to parse URL-encoded form data
+//set up body parser middleware to parse URL-encoded form data
 app.use(bodyParser.urlencoded({ extended: true }));
 
 ////////////////Routing
